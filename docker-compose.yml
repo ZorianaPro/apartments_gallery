@@ -1,0 +1,9 @@
+version: '3'
+  services:
+    apartments-gallery:
+      build: .
+      image: docker.io/zlesyk/apartments_gallery_holidu:$VERSION
+      container_name: apartments_gallery_holidu
+      restart: unless-stoped
+      enviroment:
+        - NODE_ENV=production
