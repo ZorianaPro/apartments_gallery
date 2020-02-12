@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import { shallow } from 'enzyme';
+import { shallow, render } from 'enzyme';
 
 describe('App', () => {
   let app;
@@ -10,11 +10,17 @@ describe('App', () => {
     app = shallow(<App />);
   });
 
-  it('renders without crashing', () => {
+  test('renders without crashing', () => {
+    const div = document.createElement('div');
+    ReactDOM.render(<App />, div);
+    ReactDOM.unmountComponentAtNode(div);
+  });
+
+  test('renders without crashing', () => {
     shallow(<App />);
   });
 
-  it('renders as expected', () => {
+  test('renders as expected', () => {
     expect(app).toMatchSnapshot();
   });
 });
