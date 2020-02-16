@@ -12,7 +12,7 @@ ShallowWrapper {
             "subscribe": [Function],
           }
     }>
-    <Index />
+    <App />
 </Provider>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -28,7 +28,7 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "function",
     "props": Object {
-      "children": <Index />,
+      "children": <App />,
       "value": Object {
         "store": Object {
           "clearActions": [Function],
@@ -92,7 +92,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "function",
       "props": Object {
-        "children": <Index />,
+        "children": <App />,
         "value": Object {
           "store": Object {
             "clearActions": [Function],

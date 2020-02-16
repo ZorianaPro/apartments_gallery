@@ -2,6 +2,7 @@ import React from 'react';
 import {useSelector, useDispatch} from "../../react-redux-hooks";
 import Offer from '../../components/Offer';
 import allActions from "../../actions";
+import './index.css'
 
 
 const Results = () => {
@@ -27,24 +28,23 @@ const Results = () => {
 
 	if (error_msg) {
 		return (
-			<div>
+			<div className="error">
 				{error_msg}
 			</div>
 		)
 	}
-	return (
-		apartments.map((offer) => {
-			return (
-				<Offer id={offer.id}
-				       name={offer.details.name}
-				       detiles={offer.details}
-				       photos={offer.photos}
-				       price={offer.price}
-				       rating={offer.rating}
 
-				/>
-			)
-		})
+	return (
+			apartments.map((offer) => {
+				return (
+						<Offer id={offer.id}
+						       name={offer.details.name}
+						       photos={offer.photos}
+						       price={offer.price}
+						       locationName={offer.location.name}
+						/>
+				)
+			})
 	)
 };
 
