@@ -7,7 +7,6 @@ import { shallow, configure, mount } from 'enzyme';
 import jest from 'jest-mock';
 import * as ReactReduxHooks from '../../react-redux-hooks';
 import allActions from '../../actions';
-import renderer from 'react-test-renderer'
 
 describe('Results', () => {
 	const INITIAL_STATE = {
@@ -29,7 +28,7 @@ describe('Results', () => {
 		store = mockStore(INITIAL_STATE);
 		wrapper = mount(<Provider store={store}><Results /></Provider>);
 		useEffect = jest.spyOn(React, "useEffect");
-		mockUseEffect(); // important to do it twice
+		mockUseEffect();
 		mockUseEffect();
 	});
 

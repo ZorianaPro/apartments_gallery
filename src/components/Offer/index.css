@@ -1,0 +1,36 @@
+.offer-item {
+    width: 45%;
+    max-width: 400px;
+    height: 400px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.13);
+    margin: 16px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5%;
+    cursor: pointer
+}
+
+.offer-title {
+    padding: 8px;
+}
+
+.cut-title {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.image-container {
+    position: relative;
+    height: 200px;
+}
+
+.offer-image {
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}

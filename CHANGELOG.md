@@ -1,5 +1,8 @@
 ## CHANGELOG
 
+###1.1.0
+- Add some css but it still look miserable
+
 ###1.0.1
 - Fix Results test
 - remove Button Component
