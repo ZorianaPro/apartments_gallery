@@ -27,7 +27,7 @@ describe('Results', () => {
 
 	beforeEach(() => {
 		store = mockStore(INITIAL_STATE);
-		wrapper = renderer.create(<Provider store={store}><Results /></Provider>);
+		wrapper = mount(<Provider store={store}><Results /></Provider>);
 		useEffect = jest.spyOn(React, "useEffect");
 		mockUseEffect(); // important to do it twice
 		mockUseEffect();

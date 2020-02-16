@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import logo from '../../logo.svg';
 import './index.css';
-import Button from '../../components/Button';
 import Results from '../../components/Results';
 
 class Index extends Component {

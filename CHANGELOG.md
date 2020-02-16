@@ -1,5 +1,9 @@
 ## CHANGELOG
 
+###1.0.1
+- Fix Results test
+- remove Button Component
+
 ###1.0.0
 - Add Results, Button, Offer components
 - create sagas, actions and reducers
