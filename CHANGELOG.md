@@ -1,7 +1,14 @@
 ## CHANGELOG
 
+###1.0.0
+- Add Results, Button, Offer components
+- create sagas, actions and reducers
+- add tests
+- get data from API and display in view
+
+
 ###0.2.0
-- Install main components
+- Install main packages
 - set up tests
 - create docker image
 
