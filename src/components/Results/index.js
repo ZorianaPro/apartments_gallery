@@ -5,47 +5,47 @@ import allActions from "../../actions";
 import './index.css'
 
 
-const Results = () => {
-	const {apartments, loading, error_msg} = useSelector(state => ({
-		apartments: state.apartments.apartments || [],
-		loading: state.apartments.loading,
-		error_msg: state.apartments.error_msg
-	})) || [];
 
-	const dispatch = useDispatch();
+const Results = (props) => {
 
-	React.useEffect(() => {
-		dispatch(allActions.apartmentsActions.getApartments());
-	}, []);
+	const apartments = props.apartments || [];
+	const apartmentsLength = apartments.length;
+	const loading = props.loading;
+	const error_msg = props.error_msg;
 
-  if (loading) {
-  	return (
-  		<div className="loading">
-			  Loading...
-		  </div>
-	  )
-  }
-
-	if (error_msg) {
+		if (loading) {
+			return (
+				<div className="loading">
+					Loading...
+				</div>
+			)
+		}
+		if (error_msg) {
+			return (
+				<div className="error">
+					{error_msg}
+				</div>
+			)
+		}
+	if (apartmentsLength === 0 && !error_msg && !loading) {
 		return (
-			<div className="error">
-				{error_msg}
+			<div className="no-results">
+				Nothing to show!
 			</div>
 		)
 	}
-
-	return (
+		return (
 			apartments.map((offer) => {
 				return (
-						<Offer id={offer.id}
-						       name={offer.details.name}
-						       photos={offer.photos}
-						       price={offer.price}
-						       locationName={offer.location.name}
-						/>
+					<Offer id={offer.id}
+					       details={offer.details}
+					       photos={offer.photos}
+					       price={offer.price}
+					       location={offer.location}
+					/>
 				)
 			})
-	)
+		)
 };
 
 export default Results;

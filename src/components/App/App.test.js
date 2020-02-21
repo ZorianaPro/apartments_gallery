@@ -4,6 +4,8 @@ import App from '../App';
 import { shallow, render } from 'enzyme';
 import { Provider } from 'react-redux';
 import configureStore from 'redux-mock-store'
+import * as ReactReduxHooks from "../../react-redux-hooks";
+import allActions from "../../actions";
 
 describe('App', () => {
   const initialState = {
@@ -11,8 +13,9 @@ describe('App', () => {
     apartments: [],
     error_msg: ''
   };
-  const mockStore = configureStore();
   let app, store;
+
+  const mockStore = configureStore();
 
   beforeEach(() => {
     store = mockStore(initialState);
