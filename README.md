@@ -19,4 +19,4 @@ To run it locally you need to:
 
 Application testing:
 1. To run tests use the command `npm test`
-2. To check test coverage run `npm test -- --coverage`
+2. To check test coverage run `npm test -- --ci --coverage`
