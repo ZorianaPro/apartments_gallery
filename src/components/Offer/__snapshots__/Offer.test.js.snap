@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Offers renders as expected 1`] = `
+<Offer
+  details={
+    Object {
+      "name": "TEST",
+    }
+  }
+  id={123}
+  location={
+    Object {
+      "name": "Test",
+    }
+  }
+  photos={
+    Array [
+      Object {
+        "m": "qwer",
+      },
+    ]
+  }
+  price={123}
+>
+  <div
+    className="offer-item"
+    key="123"
+  >
+    <div
+      className="image-container"
+    >
+      <img
+        alt="TEST"
+        className="offer-image"
+        height="100%"
+        src="qwer"
+        width="100%"
+      />
+    </div>
+    <div
+      className="offer-item-info"
+    >
+      <div
+        className="info-container"
+      >
+        <div
+          className="offer-title cut-title"
+        >
+          TEST
+        </div>
+        <div>
+          Test
+        </div>
+      </div>
+      <div
+        className="price-container"
+      >
+        <span>
+           
+          /night
+        </span>
+      </div>
+    </div>
+  </div>
+</Offer>
+`;

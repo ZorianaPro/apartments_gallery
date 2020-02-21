@@ -1,5 +1,10 @@
 ## CHANGELOG
 
+###2.0.0
+- Change structure of application. Pass props from App to results to make it testable
+- Add tests for all components
+- Configure snapshotSerializers
+
 ###1.1.0
 - Add some css but it still look miserable
 

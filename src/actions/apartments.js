@@ -7,7 +7,7 @@ const getApartments = () => {
 const requestApartments = (data) => {
 	return {
 		type: 'REQUEST_APARTMENTS',
-		payload: data
+		payload: data || []
 	}
 };
 

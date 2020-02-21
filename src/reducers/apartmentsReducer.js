@@ -9,7 +9,7 @@ const apartments = (state = INITIAL_STATE, action) => {
 		case 'GET_APARTMENTS':
 			return { ...state, loading: true};
 		case 'REQUEST_APARTMENTS':
-			return { ...state, apartments: action.payload, loading: false };
+			return { ...state, apartments: action.payload || [], loading: false };
 		case 'HAS_ERROR':
 			return { ...state, error_msg: "Ooops....Something went wrong"};
 		default:
