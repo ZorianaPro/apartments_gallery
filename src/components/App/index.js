@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import logo from '../../holidu.png';
 import './index.css';
 import Results from '../../components/Results';

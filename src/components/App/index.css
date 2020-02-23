@@ -1,30 +1,25 @@
+@import "../../css/variables.css";
+
 .App {
   text-align: center;
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
   height: 125px;
-  margin-top: 88px;
 }
 
 .App-header {
-  background-color: rgba(56, 152, 207, 0.2);;
-  height: 300px;
+  background-color: var(--header);
+  height: 100px;
   padding: 20px;
   color: white;
 }
 
 .App-intro {
-  padding: 24px;
   margin: 24px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  font-family: 'Playfair Display', serif;
 }
