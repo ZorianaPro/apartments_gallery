@@ -1,0 +1,11 @@
+:root {
+    --white: #FFFFFF;
+    --light-black: #414141;
+    --header: rgba(56, 152, 207, 0.2);
+    --title: #0C6EEF;
+    --light-border: #E5E5E5;
+    --more-button: #FF6064;
+    --more-button-hover: #FF3A3D;
+    --loading: #4D9078;
+    --error: #8C001A;
+}

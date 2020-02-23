@@ -1,7 +1,9 @@
+@import "../../css/variables.css";
+
 .loading {
-  color: green
+  color: var(--loading)
 }
 
 .error {
-  color: red
+  color: var(--error)
 }

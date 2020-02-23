@@ -1,5 +1,11 @@
 ## CHANGELOG
 
+### 2.1.0
+- Add some styles
+- Add function to display currency symbol
+- Test new functions
+- Add css variables
+
 ###2.0.0
 - Change structure of application. Pass props from App to results to make it testable
 - Add tests for all components

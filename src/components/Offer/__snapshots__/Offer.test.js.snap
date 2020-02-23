@@ -22,8 +22,9 @@ exports[`Offers renders as expected 1`] = `
   }
   price={123}
 >
-  <div
+  <a
     className="offer-item"
+    href="/"
     key="123"
   >
     <div
@@ -55,12 +56,19 @@ exports[`Offers renders as expected 1`] = `
       <div
         className="price-container"
       >
-        <span>
-           
-          /night
-        </span>
+        <span />
       </div>
     </div>
-  </div>
+    <div
+      className="bottom-container"
+    >
+      <a
+        className="more-button"
+        href="link"
+      >
+        Book now
+      </a>
+    </div>
+  </a>
 </Offer>
 `;

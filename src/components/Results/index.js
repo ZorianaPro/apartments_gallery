@@ -1,10 +1,6 @@
 import React from 'react';
-import {useSelector, useDispatch} from "../../react-redux-hooks";
 import Offer from '../../components/Offer';
-import allActions from "../../actions";
 import './index.css'
-
-
 
 const Results = (props) => {
 
@@ -42,6 +38,7 @@ const Results = (props) => {
 					       photos={offer.photos}
 					       price={offer.price}
 					       location={offer.location}
+					       link={offer.detailsLink}
 					/>
 				)
 			})
